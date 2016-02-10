@@ -51,6 +51,9 @@ class Car < Vehicle
     #Make speed of car starting at 0 part of the initialization.
     @speed = 0
   end
+  def year
+    return @modelYear
+  end
   #create a method to return the number of wheels.
   def wheels
     return @wheels
@@ -93,9 +96,6 @@ class Tesla < Car
   end
 end
 
-myTesla = Tesla.new
-myTesla.brake
-
 
 # Story: As a programmer, I can make a Tata car.
 # Task: Create an object called myTata which is of class Tata.
@@ -115,8 +115,6 @@ class Tata < Car
   end
 end
 
-myTata = Tata.new
-
 # Story: As a programmer, I can make a Toyota car.
 # Task: Create an object called myToyota which is of class Toyota.
 
@@ -134,8 +132,6 @@ class Toyota < Car
     end
   end
 end
-
-myToyota = Toyota.new
 
 
 # Story: As a programmer, I can keep a collection of two of each kind of vehicle, all from different years.
